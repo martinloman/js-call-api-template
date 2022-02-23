@@ -1,7 +1,6 @@
 let searchText = document.getElementById("txtSearch")
 
 searchText.onkeydown = async function (event) {
-  console.log(event.key)
   if (event.key === "Enter") {
     event.preventDefault()
 
@@ -16,7 +15,7 @@ searchText.onkeydown = async function (event) {
     // Här anropas funktionen som ansvarar för att "rendera" (alltså rita ut) resultatet
     renderResults(results)
 
-    // Skriv kod för att tömma sökfältet igen
+    // TODO: Skriv kod för att tömma sökfältet igen
   }
 }
 
