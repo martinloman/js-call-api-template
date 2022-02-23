@@ -30,7 +30,7 @@ async function search(searchString) {
     */
 
   //Här bygger vi upp den URL som vi ska använda i vårat anrop till APIet.
-  let apiKey = "" // Lägg in API-nyckeln från Classroom här.
+  let apiKey = "" //TODO: Lägg in API-nyckeln från Classroom här.
   var url = `https://api.themoviedb.org/3/search/movie?query=${searchString}&api_key=${apiKey}`
   console.log("Den URL vi kommer anropa: ", url)
 
@@ -56,11 +56,11 @@ function renderResults(res) {
   //Använd console.log för att se ur objektet res ser ut.
   console.log(res)
 
-  // Hämta ut attributet av variablen res som innehåller listan med resultat
+  // TODO: Hämta ut attributet av variablen res som innehåller listan med resultat
   // och tilldela variablen allObjects det värdet.
   let allObjects = []
   allObjects.forEach((object) => {
-    // lägg in en div i resultDiv för varje objekt
+    // TODO: lägg in en div i resultDiv för varje objekt
     // du kan använda t.ex. resultDiv.insertAdjacentHTML("beforeend", "en sträng med html")
   })
 }
