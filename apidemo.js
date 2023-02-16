@@ -44,21 +44,24 @@ async function search(searchString) {
   Den här funktionen går igenom sökresultatet som är parametern "results"
   och skriver ut det i en lista i DOMen.
 */
-function renderResults(res) {
+function renderResults(results) {
   let resultDiv = document.getElementById("searchresults") //Hämtar ut diven med id="searchresults" för att lägga in resultatet där
 
   // Använd console.log() för att skriva ut resultatet till konsollen och titta på det.
   // Det är ofta bra att titta på hur resultatet ser ut för att få en förståelse för
   // hur man kan skriva koden för att använda resultatet.
-  console.log(res)
+  console.log("resultatet: ", results)
 
   // TODO: Hämta ut attributet av variablen res (res.results) som innehåller listan med resultat
   // och tilldela variablen allObjects det värdet.
   let allObjects = []
 
   // Den här loopen används för att lägga in något i DOMen för varje objekt (film) i resultatet.
-  allObjects.forEach((object) => {
+  for (let index = 0; index < allObjects.length; index++) {
+    const object = allObjects[index]
+    console.log("loopar igenom objekten ", object)
     // TODO: lägg in en div i resultDiv för varje objekt
     // du kan använda t.ex. resultDiv.insertAdjacentHTML("beforeend", "en sträng med html")
-  })
+  }
+  allObjects.forEach((object) => {})
 }
