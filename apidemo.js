@@ -63,5 +63,4 @@ function renderResults(results) {
     // TODO: lägg in en div i resultDiv för varje objekt
     // du kan använda t.ex. resultDiv.insertAdjacentHTML("beforeend", "en sträng med html")
   }
-  allObjects.forEach((object) => {})
 }
